@@ -104,7 +104,7 @@ body, html
 
     font-family: "League Spartan", sans-serif;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .footer-content {
@@ -132,16 +132,4 @@ body, html
 
 .social-media a:hover {
     text-decoration: underline;
-}
-
-/* Mobile
- */
-@media (max-width: 767px) {
-    .footer {
-        font-size: 1.2rem;
-        padding: 20px 0;
-    }
-    .company-info p {
-        margin: 12px 0;
-    }
 }
