@@ -133,3 +133,15 @@ body, html
 .social-media a:hover {
     text-decoration: underline;
 }
+
+/* Mobile
+ */
+@media (max-width: 767px) {
+    .footer {
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+    .company-info p {
+        margin: 12px 0;
+    }
+}
