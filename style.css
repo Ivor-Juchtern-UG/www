@@ -61,7 +61,7 @@ body, html
     vertical-align: middle;
 }
 
-..small-title {
+.small-title {
     position: absolute;
     bottom: 50px; /* Adjust this value to control the distance from the bottom */
     left: 50%;
