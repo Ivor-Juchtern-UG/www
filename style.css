@@ -68,7 +68,7 @@ body, html
     transform: translateX(-50%);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 1.5rem; /* Adjust size as needed */
+    font-size: 1.5rem;
     z-index: 1;
     text-align: center;
     width: 100%;
@@ -84,8 +84,8 @@ body, html
     }
 
     .small-title {
-        font-size: clamp(1.1rem, 3.8vw, 1.5rem);
-        bottom: 24px;
+        font-size: 3rem;
+        bottom: 24px; /* Adjust this value to control the distance from the bottom */
     }
 
     p.container-title {
