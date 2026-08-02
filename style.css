@@ -74,7 +74,8 @@ body, html
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
     .bg-title {
         font-size: clamp(2rem, 7vw, 3rem);
         max-width: 90%;
