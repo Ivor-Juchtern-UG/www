@@ -61,7 +61,7 @@ body, html
     vertical-align: middle;
 }
 
-.small-title {
+..small-title {
     position: absolute;
     bottom: 50px; /* Adjust this value to control the distance from the bottom */
     left: 50%;
@@ -72,6 +72,29 @@ body, html
     z-index: 1;
     text-align: center;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .bg-title {
+        font-size: clamp(2rem, 7vw, 3rem);
+        max-width: 90%;
+        width: 90%;
+        line-height: 1.1;
+    }
+
+    .small-title {
+        font-size: clamp(1.1rem, 3.8vw, 1.5rem);
+        bottom: 24px;
+    }
+
+    p.container-title {
+        font-size: 2.2rem;
+    }
+
+    .container-text {
+        font-size: 1.15rem;
+        line-height: 1.7rem;
+    }
 }
 
 /* Adds a black contour (outline) to text when applied */

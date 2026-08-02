@@ -15,6 +15,16 @@
 
         <link rel="stylesheet" href="../style.css">
 
+        <!-- Script in <head> with DOMContentLoaded -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('../footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer').innerHTML = html;
+                    });
+            });
+        </script>
     </head>
     <body>
 
@@ -22,7 +32,7 @@
             
             <div class="overlay"></div>
             
-            <div class="bg-title contour">Scratch für Kinder 8-12<br>
+            <div class="bg-title contour" style="color: orangered;">Scratch für Kinder 8-12<br>
                                 
                                 <span class="divider"></span>
                                 <br>
@@ -108,20 +118,7 @@
             
         </div>
 
-        <footer class="footer">
-            <p>
-                <b>Ivor Jüchtern UG (haftungsbeschränkt)</b>
-            </p>
-            <br>
-            <p>Dieburger Straße 78</p>
-            <p>64287 Darmstadt</p>
-            <br>
-            <p>Handelregistergericht Darmstadt HRB 107372</p>
-            <p>Umsatzsteuer-Identifikationsnummer DE452433967</p>
-            <br>
-            <p>+49 151 5 111 26 31</p>
-            <p>ij@ivorjuechtern.de</p>
-        </footer>
+        <div id="footer"></div>
 
     </body>
 </html>
