@@ -30,7 +30,7 @@ body, html
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.bg-text
+.bg-title
 {
     position: absolute;
     top: 50%;
@@ -74,6 +74,11 @@ body, html
     width: 100%;
 }
 
+/* Adds a black contour (outline) to text when applied */
+.contour {
+    /* multiple text-shadow layers to simulate an even black outline */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 2px #000;
+}
 .container
 {
     display: flex;
@@ -116,7 +121,8 @@ p.container-title
     margin-bottom: 0em;
 }
 
-p.container-text
+/* for p and ul */
+.container-text
 {
     font-family: "League Spartan", sans-serif;
     font-size: 1.5rem;
