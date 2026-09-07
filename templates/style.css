@@ -281,7 +281,7 @@ img.article-hero
 .article-page h1:not(.article-title)
 {
     font-family: "League Spartan", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     font-optical-sizing: auto;
     font-style: normal;
@@ -293,7 +293,7 @@ img.article-hero
 .article-page h2
 {
     font-family: "League Spartan", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     font-optical-sizing: auto;
     font-style: normal;
@@ -375,7 +375,7 @@ body.article-page {
 .article-page p
 {
     font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1.5rem;
+    max-width: 70rem;
+    line-height: 2rem;
 }
