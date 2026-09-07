@@ -349,8 +349,8 @@ a:visited:hover
 /* ToC container */
 .toc-container {
     max-width: min(800px, 100vw - 2rem);
-    margin: 2rem auto;
-    padding: 2rem 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 /* Article page body */
