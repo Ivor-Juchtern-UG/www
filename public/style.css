@@ -220,6 +220,17 @@ a.logo:active {
   padding: 0;
   margin: 0;
   border: none;
+  color: black;
+}
+
+.index-logo a.logo,
+.index-logo span.logo,
+.index-logo div.logo {
+    color: white;
+}
+
+.index-logo a.logo::before {
+    background: gold;
 }
 
 /* Article Title
@@ -315,13 +326,13 @@ a:visited:hover
 }
 
 /* Article page body */
-body {
+body.article-page {
     max-width: min(800px, 100vw - 2rem);
     margin: 0 auto;
     padding: 6em 1em 0;
 }
 
-img
+.article-page img
 {
     max-width: 100%;
     height: auto;
@@ -329,7 +340,7 @@ img
     margin: 0 auto 2rem;
 }
 
-p
+.article-page p
 {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;

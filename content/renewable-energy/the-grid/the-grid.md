@@ -1,7 +1,7 @@
 ---
 category: Renewable Energy
 title: The Grid
-authors: by Ivor Jüchtern
+authors: 
 image: images/1.jpeg
 explanation: Workers performing maintenance by riding in gondolas under high-voltage lines near the author's home in Darmstadt, Germany.
 ---
