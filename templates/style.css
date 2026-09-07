@@ -327,9 +327,13 @@ a:visited:hover
 
 /* Article page body */
 body.article-page {
+    margin: 0;
+    padding: 6em 1em 0;
+}
+
+.article-page article {
     max-width: min(800px, 100vw - 2rem);
     margin: 0 auto;
-    padding: 6em 1em 0;
 }
 
 .article-page img
