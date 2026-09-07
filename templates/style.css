@@ -315,13 +315,13 @@ a:visited:hover
 }
 
 /* Article page body */
-body {
+body.article-page {
     max-width: min(800px, 100vw - 2rem);
     margin: 0 auto;
     padding: 6em 1em 0;
 }
 
-img
+.article-page img
 {
     max-width: 100%;
     height: auto;
@@ -329,7 +329,7 @@ img
     margin: 0 auto 2rem;
 }
 
-p
+.article-page p
 {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
