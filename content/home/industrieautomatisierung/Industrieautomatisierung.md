@@ -4,6 +4,7 @@ title: Industrieautomatisierung
 authors:
 image: images/phoenix-contact-pls-axc-f-1252.jpg
 explanation: AXC F 1252 ist der neue Controller von Phoenix Contact.
+toc: false
 ---
 
 Wir automatisieren industrielle Prozesse mit allen IEC 61131-3-kompatiblen industriellen Controllern.
