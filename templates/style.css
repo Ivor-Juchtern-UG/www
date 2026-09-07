@@ -176,3 +176,163 @@ img.container-image
     line-height: 25%;
     color: #dddddd;
 }
+
+/*
+ * Logo
+ */
+
+div.logo {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    z-index: 1000;
+}
+
+span.logo
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+a.logo {
+    position: relative;
+    display: inline-block;
+}
+
+a.logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.3em;
+    right: -0.3em;
+    height: 50%;
+    background: gold;
+    z-index: -1;
+}
+
+a.logo,
+a.logo:hover,
+a.logo:active {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Article Title
+ */
+h1.article-title
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 0.25rem 0;
+}
+
+.article-authors
+{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+img.article-hero
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    margin: 1.5rem auto 2.5rem;
+    border: 3px solid #fff;
+    outline: 1px solid #ddd;
+}
+
+.article-explanation
+{
+    font-size: 1rem;
+    color: #444444;
+    text-align: center;
+    margin: -1.5rem auto 2.5rem;
+    max-width: 700px;
+    padding: 0 1rem;
+}
+
+img.article-inline-image
+{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.8rem;
+}
+
+/* Category names in ToC - as large as article titles */
+h2
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+/* Article links in ToC - a bit smaller */
+a
+{
+    text-decoration: none;
+    color: black;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.8rem;
+}
+
+a:hover
+{
+    text-decoration: none;
+    background-color: gold;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited:hover
+{
+    text-decoration: none;
+    background-color: gold;
+}
+
+/* ToC container */
+.toc-container {
+    max-width: min(800px, 100vw - 2rem);
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+}
+
+/* Article page body */
+body {
+    max-width: min(800px, 100vw - 2rem);
+    margin: 0 auto;
+    padding: 6em 1em 0;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+p
+{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
