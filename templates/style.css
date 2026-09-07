@@ -372,7 +372,9 @@ body.article-page {
     margin: 0 auto 2rem;
 }
 
-.article-page p
+.article-page p,
+.article-page ul,
+.article-page li
 {
     font-family: "League Spartan", sans-serif;
     font-size: 1.5rem;
