@@ -238,10 +238,13 @@ a.logo:active {
 h1.article-title
 {
     font-family: "League Spartan", sans-serif;
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-align: center;
     margin: 0 0 0.25rem 0;
+    line-height: 1.2;
 }
 
 .article-authors
@@ -272,6 +275,31 @@ img.article-hero
     margin: -1.5rem auto 2.5rem;
     max-width: 700px;
     padding: 0 1rem;
+}
+
+/* Markdown headings - same font as hero title but progressively smaller */
+.article-page h1:not(.article-title)
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: left;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.article-page h2
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: left;
+    margin: 1rem 0 0.5rem 0;
 }
 
 img.article-inline-image
@@ -321,15 +349,19 @@ a:visited:hover
 /* ToC container */
 .toc-container {
     max-width: min(800px, 100vw - 2rem);
-    margin: 2rem auto;
-    padding: 2rem 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 /* Article page body */
 body.article-page {
+    margin: 0;
+    padding: 6em 1em 0;
+}
+
+.article-page article {
     max-width: min(800px, 100vw - 2rem);
     margin: 0 auto;
-    padding: 6em 1em 0;
 }
 
 .article-page img
@@ -340,10 +372,12 @@ body.article-page {
     margin: 0 auto 2rem;
 }
 
-.article-page p
+.article-page p,
+.article-page ul,
+.article-page li
 {
     font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1.5rem;
+    max-width: 70rem;
+    line-height: 2rem;
 }
