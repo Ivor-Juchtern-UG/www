@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>
+
+            Ivor Jüchtern
+
+        </title>
+
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="favicon.png" type="image/png">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Script in <head> with DOMContentLoaded -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer').innerHTML = html;
+                    });
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <div class="bg-image">
+            
+            <div class="overlay"></div>
+            
+            <div class="bg-title">Digitalisierung klassischer Industrien<br>
+                                
+                                <span class="divider"></span>
+                                <br>
+                                von Null auf #1
+            </div>
+
+            <div class="small-title">
+
+                MIT 43 JAHREN ERFAHRUNG
+
+            </div>
+       
+        </div>
+
+        <div class="container">
+
+            <div class="smaller">
+
+            </div>
+
+            <div class="bigger">
+
+                <!-- Protecting the paragraphs from the flex.
+                -->
+                <div>
+
+                    <p class="container-title">{{homeTitle}}</p>
+
+                    <p class="container-text">{{homeParagraph1}}</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="container">
+
+            <div class="smaller">
+
+                <!-- div class="triangle"></div -->
+
+            </div>
+
+            <div class="bigger">
+
+                <img class="container-image" src="{{homeImage}}">
+
+                <!-- Protecting the paragraphs from the flex.
+                -->
+                <div>
+
+                    <p class="container-text">{{homeParagraph2}}</p>
+                    
+                    <p class="container-text">{{homeParagraph3}}</p>
+
+                    <p class="container-text">{{homeParagraph4}}</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id="footer"></div>
+
+    </body>
+</html>
