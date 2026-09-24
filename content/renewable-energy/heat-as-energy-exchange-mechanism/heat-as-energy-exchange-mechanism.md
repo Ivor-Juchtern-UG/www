@@ -1,6 +1,6 @@
 ---
 category: Renewable Energy
-title: Heat as Exchange Mechanism
+title: Heat as Energy Exchange Mechanism
 authors: 
 image: images/Sand-Battery-2MW-PNE.jpeg
 explanation: A 2MW Sand Battery. Image courtes of Polar Night Energy.
