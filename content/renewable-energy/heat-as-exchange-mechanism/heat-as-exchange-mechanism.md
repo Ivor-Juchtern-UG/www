@@ -22,13 +22,13 @@ This article is especially aimed at them.
 
 # Problem
 
-Nearby Industrial Sites may have different energy needs. Some may have excess of energy. Some may lack energy. While the Grid might be unalbe or unwilling to accept or provide energy.
+Nearby Industrial Sites may have different energy needs. Some may have excess of energy. Some may lack energy, due to the Grid capacity in this area.
 
-Exchanging energy can, therefore, be not only interesting for them, but also a factor in business success and even survival.
+Exchanging energy can, therefore, be not only interesting for them, but also a factor in business success and sometimes survival.
 
-A typical change channel is the Grid. The Grid can be an easy channel in cases, where one Site has excess of solar energy and another lacks electrical energy.
+A natural channel to eschange energy would be in the form of electricity over the Grid. The Grid can be an easy channel in cases, where one Site has excess of, for example, solar energy and the other site lacks electrical energy.
 
-But sometimes the Grid does not allow this exchange for administrative or technology reasons.
+The Grid, sometimes, might be unalbe or unwilling to allow that for administrative or technology reasons.
 
 # Solution
 
