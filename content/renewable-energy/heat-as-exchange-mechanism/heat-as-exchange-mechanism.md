@@ -37,3 +37,9 @@ A solution for some Industrial Sites can be transformation and exchange of energ
 For example, the Finnish company Polar Night Energy produces Sand Batteries, which store energy in the form of heat.
 
 Industrial Sites can, therefore, transform their excess energy into heat and then build local heat exchange, which might be subject to less administrative or technology limitations.
+
+# Interested in a Conversation?
+
+Contact us at ij@ivorjuechtern.de.
+
+For Germany Ivor Jüchtern is a certified BAFA consultant and can facilitate a strategy subsidy.
