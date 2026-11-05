@@ -36,21 +36,39 @@ The Grid is the infrastructure connecting in-front-of-the-meter sources of energ
 
 The Grid was not designed. It grew, step by step, and each step left something we still live with today.
 
-## Before 1880: No Grid
+## In the Beginning: No Grid
 
 There was no Grid. Energy was made where it was used.
 
 A factory had its own steam engine. Shafts and leather belts carried the power to the machines. Light came from gas, oil and candles.
 
-## 1882: One Generator, One User
+## 1860s: One Generator, One User
 
-![Edison’s “Jumbo” dynamo at Pearl Street Station, New York, the first central power station in the United States (1882). Pearl Street ran on direct current, so frequency did not exist yet. Image: Wikimedia Commons.](images/the-grid-1.jpg)
+![An Alliance machine, the generator that grew out of Floris Nollet’s design. In the 1860s such machines lit lighthouses: one generator, one arc lamp, alternating current.](images/the-grid-2.jpg)
+
+<!-- Claude: add the source and licence of the Alliance machine photo to the caption above. -->
+
+Floris Nollet, a Belgian professor, designed a steam-driven generator in 1849. After his death, the company L'Alliance developed it further.
+
+In 1863 an Alliance machine began lighting the lighthouse at Cap de la Hève near Le Havre. It fed one arc lamp.
+
+One generator, one user. Literally.
+
+The machine produced alternating current, so frequency already existed. But nobody cared. If the machine slowed down, the lamp dimmed a little, and nobody else was affected.
+
+Frequency: no problem.
+
+## 1882: One Station, Many Users
+
+![Edison’s “Jumbo” dynamo at Pearl Street Station, New York, the first central power station in the United States (1882). Pearl Street ran on direct current, so it had no frequency at all. Image: Wikimedia Commons.](images/the-grid-1.jpg)
 
 In 1882 Thomas Edison opened Pearl Street Station in New York. Steam engines drove dynamos, and cables ran from the station straight to the customers' lamps, within about a mile.
 
 There was no Grid in our sense. There was a cable between the guy with the turbine and the guy with the light bulb. The owner of the station was the Grid.
 
 Pearl Street used direct current at low voltage. That is why its reach was so short.
+
+Direct current has no frequency. Frequency: no problem.
 
 ## 1891: Alternating Current Brings Frequency
 
@@ -61,6 +79,18 @@ In 1891 a three-phase line carried power 175 km from Lauffen am Neckar to the el
 With alternating current comes frequency. In a small system with one generator, frequency is simply how fast the generator turns.
 
 Every town chose its own. Europe used everything from 25 Hz to 60 Hz before slowly settling on 50 Hz.
+
+Still no problem. Each station fed its own lamps at its own frequency, and lamps barely notice.
+
+## 1890s: Frequency Becomes a Problem
+
+Two things changed.
+
+First, electric motors. An alternating-current motor turns at a speed set by the frequency. When the frequency drops, the machines in the factory slow down with it. Now frequency matters to the user.
+
+Second, stations get connected. Two generators on the same wires must turn in step, at exactly the same frequency.
+
+From here on, frequency is a problem, and somebody has to keep it steady.
 
 ## Load Slows the Generator
 
@@ -88,7 +118,7 @@ A large rotor spinning fast stores a lot of kinetic energy. When the load jumps,
 
 Inertia is not how fast a power plant can change its output. A nuclear plant is slow to change its output, but its huge turbine gives plenty of inertia. Slowness of output is called ramp rate, or flexibility.
 
-With one small generator there is little inertia, and the frequency swings a lot. Nobody cared much in those days: lamps barely notice.
+With one small generator there is little inertia, and the frequency swings a lot. With only lamps attached, nobody cared. With motors and a second generator, it starts to matter.
 
 ## Two Generators
 

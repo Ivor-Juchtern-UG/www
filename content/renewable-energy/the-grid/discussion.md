@@ -123,3 +123,8 @@ This file has no frontmatter, so the site generator skips it (like resilience.md
 - Ivor shared the draft article The Grid and asked whether it is correct and going in the right direction.
 - Claude: Yes. Strongest ideas: throughput vs. balance, and the meter as a legal, not an electrical, boundary. To fix: the frequency numbers are too loose for Europe; "no valve" overstates things; the nature section's conclusion does not follow from its numbers. Several sections are drafts.
 - Ivor: Restructure the article into a historic overview with short sections on a timeline, preserving my way of thinking; do not remove empty sections and do not touch my content; add the discussion and review comments, as a pull request. Use the Edison Pearl Street photo for the "one generator, one user" section.
+- Claude: Pearl Street (1882) fits "the station owner was the Grid", but it ran on direct current, so it had no frequency.
+- Ivor: Is the Alliance machine (Floris Nollet) suitable as the first illustration?
+- Claude: Even better for "one generator, one user": in the 1860s an Alliance machine lit a lighthouse, one generator feeding one arc lamp, with alternating current. Frequency existed, but nobody cared. It is a magneto without a governor, so it is the very first step.
+- Ivor: Use both, and split the sections: first where frequency is no problem, then where it becomes a problem.
+- Result: 1860s Alliance machine (one generator, one user, AC, no problem) → 1882 Pearl Street (one station, many users, DC, no problem) → 1891 AC (still no problem) → 1890s: Frequency Becomes a Problem (motors, connected stations).
