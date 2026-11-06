@@ -1,6 +1,6 @@
 # Discussion: The Grid, Frequency and Inertia
 
-Ivor Jüchtern and Claude (Anthropic), 4 and 5 November 2026. A voice conversation, condensed and paraphrased. Ivor's questions keep his framing; the answers are shortened.
+Ivor Jüchtern and Claude (Anthropic), 4 to 6 November 2026. Mostly a voice conversation, condensed and paraphrased. Ivor's questions keep his framing; the answers are shortened.
 
 This file has no frontmatter, so the site generator skips it (like resilience.md) and it is not published as a page.
 
@@ -128,3 +128,93 @@ This file has no frontmatter, so the site generator skips it (like resilience.md
 - Claude: Even better for "one generator, one user": in the 1860s an Alliance machine lit a lighthouse, one generator feeding one arc lamp, with alternating current. Frequency existed, but nobody cared. It is a magneto without a governor, so it is the very first step.
 - Ivor: Use both, and split the sections: first where frequency is no problem, then where it becomes a problem.
 - Result: 1860s Alliance machine (one generator, one user, AC, no problem) → 1882 Pearl Street (one station, many users, DC, no problem) → 1891 AC (still no problem) → 1890s: Frequency Becomes a Problem (motors, connected stations).
+
+## 12. Synchronous machines, Teraloop, physical vs synthetic inertia (6 November)
+
+- Ivor: Apparently inertia is still a thing.
+- Claude: Very much so. Spinning machines still provide most of it, and since January 2026 the German transmission system operators pay for it, from synchronous machines and grid-forming batteries.
+- Ivor: What are synchronous machines and grid-forming batteries?
+- Claude: A synchronous machine is a generator or motor whose rotor spins in lockstep with the grid's 50 Hz, so its mass gives real, physical inertia. A grid-forming battery has an inverter that sets its own voltage and frequency, like a generator, and pushes back instantly when the frequency moves.
+- Ivor: So these rotating things are not typical generators, they are just inertia things.
+- Claude: Both. Normal power-plant generators are synchronous machines and give inertia as a side effect. Synchronous condensers are built only for it: no fuel, no energy produced, they just spin with the grid for inertia and voltage support.
+- Ivor: Do you know the Finnish company Teraloop? I think they do such a thing.
+- Claude: Close to it. Teraloop builds hubless flywheels on magnetic bearings. The flywheel spins, but it is connected through power electronics, not locked to the 50 Hz, so its inertia is synthetic: a spinning battery with fast inverter control, not a synchronous condenser.
+- Ivor: What is the difference?
+- Claude: Physical inertia: the rotor is magnetically locked to the grid and gives up energy instantly, with no measuring and no deciding. Synthetic inertia: an inverter measures the frequency and software decides to respond. Very fast, but only as good as its control software.
+- Ivor: So for physical inertia, the control software is the laws of physics.
+- Claude: Exactly. It cannot have bugs, cannot be updated badly, and never hesitates.
+- Ivor: If synthetic inertia were flawless, would it still differ, at the current state of industry?
+- Claude: Yes, in three ways. Overload: a synchronous machine briefly gives five to seven times its rated current in a fault, an inverter about 1.2 to 1.5 times. Fault current for protection: relays were designed for those large currents and may not trip properly with inverters only. Energy behind it: a rotor's energy is there while it spins; a battery can be empty, or its capacity sold elsewhere. The timing gap is mostly closing.
+
+## 13. AC and DC (6 November)
+
+- Ivor: Would inertia matter in DC? And is a DC generator an AC generator converted to DC?
+- Claude: More or less. Inside every rotating generator the coils produce AC; a DC dynamo like Edison's has a commutator, a rotating switch that flips the connections every half turn. Inertia still matters in DC, but there is no frequency to protect: a sudden load makes the voltage sag. In DC, voltage is the signal.
+- Ivor: Why did Edison make DC when the generator is more complex?
+- Claude: His lamps worked on DC, the meters and motors of the time worked only on DC, and batteries could back the system up. Practical transformers came only in the mid-1880s, after Pearl Street opened.
+- Ivor: DC cannot travel long distances? I think undersea cables are DC nowadays, because of the water and capacitance.
+- Claude: DC travels fine. Edison's problem was voltage: he could not raise it, so he sent power at about 110 volts, with high current and high losses. Today power electronics make high-voltage DC (HVDC). And yes: a cable in water acts like a big capacitor that AC must charge and discharge 50 times a second; DC charges it once.
+- Ivor: So AC can be transformed with passive transformers, but DC needs electronics.
+- Claude: Yes. Electronics chop the DC into AC, a transformer changes the voltage, and it is rectified back. A phone charger does both: it rectifies the 230 V from the wall, chops it at tens of kilohertz, uses a tiny transformer, and rectifies again.
+- Ivor: So there is no way to transform without a transformer?
+- Claude: There is: DC-DC converters (buck and boost) switch fast and store energy briefly in a coil and a capacitor. You lose isolation. Without a coil, a linear regulator burns the difference as heat; a charge pump works only for small power.
+- Ivor: So it is the law of energy: if you don't use it, you have to burn it.
+- Claude: Conservation of energy, the first law of thermodynamics.
+- Ivor: Thyristors are for high frequency or high voltage?
+- Claude: High voltage and high power, but slow switching, typically once per AC cycle, as in HVDC converter stations. Fast switching is done by MOSFETs and IGBTs.
+- Ivor: So the AC grid is going nowhere for the next decades.
+- Claude: Right. DC grows at both ends: HVDC links and undersea cables for long distances, and DC inside sites and devices (solar, batteries, chargers). The middle, regional transmission and local distribution, stays AC.
+- Ivor: What is the advantage of a DC microgrid?
+- Claude: Fewer conversions, since solar, batteries, LEDs, computers and modern drives are DC anyway; braking machines can feed others on the same DC bus; no frequency or phase to synchronise. The downside: DC is harder to switch off safely, and standards are young.
+- Ivor: Why harder to switch off?
+- Claude: Opening a switch under load draws an arc. AC passes through zero 100 times a second at 50 Hz, and the arc goes out by itself. DC never crosses zero, so DC breakers need tricks: magnets to stretch the arc, or electronics.
+- Ivor: Some switches operate in oil.
+- Claude: Oil circuit breakers: the arc turns oil into gas that cools and blows out the arc. Mostly replaced by vacuum breakers and SF6 breakers; SF6 is being phased out as an extremely strong greenhouse gas.
+- Ivor: So an arc needs a gas.
+- Claude: Mostly: an arc is current through gas turned into plasma. In a vacuum breaker it burns in metal vapour from the contacts, which condenses within microseconds at the zero crossing.
+- (Aside: plasma torpedoes from science fiction are not realistic; a ball of plasma expands and cools within a fraction of a second.)
+
+## 14. Who the article is for (6 November)
+
+- Ivor: The article should be popular science with real science in it. The readers are professionals, for example engineers: not people who know nothing, but people with their own specialty, who never had time to think about these questions.
+- Ivor: Think of an interdisciplinary university course for people whose job is not the grid, but who must take informed decisions about grid-related things at work. Fun, with historical background.
+- Ivor: It should stay an article, not a book or a textbook: most topics touched in a fun way, with a paragraph or so.
+- Ivor: First list the topics, especially where we say nothing or not enough. Discuss before writing.
+
+## 15. Course map (6 November)
+
+Checked against the article. Missing and thin topics are now empty sections in the-grid.md, each with a placeholder comment; "priority" marks topics most relevant for industrial energy buyers.
+
+Covered well:
+- History, from no grid to the European interconnection
+- Frequency as the balance signal: governor, droop, spinning reserve
+- Inertia: what it is, RoCoF, how it is measured; physical vs synthetic
+- Cascades and blackouts (2006, Iberia 2025)
+- Inverters, EMS, oscillations, the certification gap
+- The meter as a legal boundary; control at the source
+- Throughput vs balance
+
+Thin:
+- Who's who: TSO, DSO, supplier, balance responsible party, metering operator, regulator
+- Control reserves (FCR, aFRR, mFRR) and how fast each acts
+- Grid fees and the cost of transport (priority)
+- Grid connection as a scarce resource (priority)
+- Flexibility on your own site: peak shaving, selling reserves, demand response (priority)
+- Backup and islanding
+- Nature and acceptance: underground cables, land use
+
+Missing:
+- Power vs energy (kW vs kWh), and why peak demand drives the bill (priority)
+- Voltage levels from 380 kV down to 400 V (priority)
+- Voltage and reactive power: cos φ and reactive power charges (priority)
+- Power quality: harmonics, voltage dips, flicker (priority)
+- Electricity markets: day-ahead, intraday, merit order, negative prices (priority)
+- Balancing groups and imbalance prices
+- Congestion: redispatch, curtailment, north-south, bidding zones
+- AC vs DC; HVDC and DC microgrids
+- Protection: breakers and arcs
+- Black start
+- Grid strength: short-circuit power
+- Digital grid and cyber security
+- Load growth: heat pumps, EVs, data centres
+- Cheat sheets: a time-scale ladder and an orders-of-magnitude table

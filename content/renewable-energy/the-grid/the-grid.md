@@ -70,6 +70,10 @@ Pearl Street used direct current at low voltage. That is why its reach was so sh
 
 Direct current has no frequency. Frequency: no problem.
 
+## Power and Energy: kW and kWh
+
+<!-- Claude placeholder, priority for industrial readers: power (kW) is the rate, energy (kWh) the amount; early metering; why peak power, not only energy, drives an industrial bill. To discuss. -->
+
 ## 1891: Alternating Current Brings Frequency
 
 Alternating current won the "war of the currents". With transformers, the voltage could be raised for long distances and lowered again for the user.
@@ -81,6 +85,10 @@ With alternating current comes frequency. In a small system with one generator, 
 Every town chose its own. Europe used everything from 25 Hz to 60 Hz before slowly settling on 50 Hz.
 
 Still no problem. Each station fed its own lamps at its own frequency, and lamps barely notice.
+
+## AC vs DC: Why the Transformer Won
+
+<!-- Claude placeholder: from the voice talk (discussion.md, section 13): a dynamo is AC inside, with a commutator; in DC, voltage is the signal; Edison's low voltage limited his reach; a transformer needs a changing current. To discuss. -->
 
 ## 1890s: Frequency Becomes a Problem
 
@@ -136,6 +144,14 @@ If one fails, the others must take its load at once. If they cannot, they slow d
 
 This is why grids keep spare capacity running, called spinning reserve.
 
+## Protection: Breakers and Arcs
+
+<!-- Claude placeholder: fault current, selective tripping, arcs and the AC zero crossing; oil, vacuum and SF6 breakers (discussion.md, section 13). To discuss. -->
+
+## Black Start: Restarting a Dead Grid
+
+<!-- Claude placeholder: which plants can start without the Grid, how islands are rebuilt and synchronised; Iberia 2025 as an example. To discuss. -->
+
 ## 1920s: Somebody Takes Care of the Cable
 
 Once several stations share the wires, somebody has to take care of the cable. Figuratively speaking, the guy with the turbine lets go of the cable and focuses on the turbine.
@@ -160,6 +176,18 @@ Size brings new problems. A disturbance does not reach everyone at once: the cha
 
 And large areas can swing against each other. More on that below.
 
+## Voltage Levels: From 380 kV to Your Socket
+
+<!-- Claude placeholder, priority for industrial readers: transmission, high, medium and low voltage; which level an industrial site connects to, and why it matters for fees and capacity. To discuss. -->
+
+## Voltage and Reactive Power
+
+<!-- Claude placeholder, priority for industrial readers: frequency is global, voltage is local; reactive power; cos φ and reactive power charges; link to the Iberian blackout. To discuss. -->
+
+## Grid Strength: Short-Circuit Power
+
+<!-- Claude placeholder: strong vs weak grid; why short-circuit power matters for large machines and for inverters. To discuss. -->
+
 ## 1990s: Turbine and Cable Become Separate Companies
 
 For most of the 20th century, one company owned everything: the power stations and the wires.
@@ -167,6 +195,10 @@ For most of the 20th century, one company owned everything: the power stations a
 In the 1990s Europe liberalised electricity. Generation, trading and the grid were separated ("unbundling"). Grid operators became companies of their own, with one job: run the network and keep the frequency in check.
 
 This legal separation is where the meter gets its meaning.
+
+## Who's Who: TSO, DSO, Supplier, Balance Responsible Party
+
+<!-- Claude placeholder: who does what after unbundling: transmission and distribution system operators, supplier, balance responsible party, metering operator, regulator. To discuss. -->
 
 # Behind-the-Meter (BTM) and In-Front-of-the-Meter (FTM)
 
@@ -216,6 +248,14 @@ Upgrading throughput—e.g., adding high-voltage lines or smart grid tech—lets
 
 <!-- Claude review: The first sentence of this paragraph repeats the Throughput paragraph word for word. -->
 
+## Congestion: Redispatch, Curtailment, Bidding Zones
+
+<!-- Claude placeholder: when the wires are full: redispatch, curtailment, Germany's north-south problem, the bidding-zone debate. To discuss. -->
+
+## Grid Connection: The New Scarce Resource
+
+<!-- Claude placeholder, priority for industrial readers: connection queues, congestion, flexible connection agreements. To discuss. -->
+
 ## Grid and Nature
 
 Ja, Vögel sterben jedes Jahr in Deutschland an Freileitungen und Masten durch tödliche Kollisionen und Stromschläge.In Deutschland verenden schätzungsweise 1 bis 2,8 Millionen Vögel jährlich an solchen Anlagen. https://niedersachsen.nabu.de/tiere-und-pflanzen/voegel/34803.html
@@ -230,11 +270,19 @@ Less Grid is better for the nature.
 
 <!-- Claude review: This section is in German while the article is in English, and the sentence about wind turbines appears twice. Only the power-line figure has a source (NABU); the others need one too. The conclusion "Less Grid is better for the nature" does not follow from the numbers: they compare power lines with glass, traffic and cats, not more grid with less grid. It also sits under "Challenges Facing the Grid" as a subsection. -->
 
+## Underground Cables and Acceptance
+
+<!-- Claude placeholder: land use, public acceptance, underground DC cables. To discuss. -->
+
 # Grid and Energy Productoin
 
 In an AC grid, generation must match consumption in real time. Any imbalance causes the grid frequency to deviate from its nominal value (50 Hz or 60 Hz). The system uses that frequency deviation as a feedback signal: if demand rises, frequency drops; generators automatically increase output (primary control), and additional reserves are dispatched (secondary/tertiary control) to restore balance.
 
 <!-- Claude review: Typo in the heading ("Productoin"). The paragraph is correct. In Europe the three control levels are called FCR (primary, fully active within 30 seconds), aFRR (secondary, within 5 minutes) and mFRR (tertiary, within 12.5 to 15 minutes). Before all three comes inertia, which acts in the first seconds without any control. -->
+
+## Control Reserves: FCR, aFRR, mFRR
+
+<!-- Claude placeholder: what acts when, from seconds to 15 minutes; who provides it; how a site can earn from it. To discuss. -->
 
 ## Tolerable variations
 
@@ -250,6 +298,10 @@ Time: Imbalances of seconds to minutes are managed by inertia and reserves; long
 
 So the match must be precise in the long run, but the grid can tolerate small, short-lived deviations while control systems act to restore equilibrium.
 
+## Power Quality: Harmonics, Dips, Flicker
+
+<!-- Claude placeholder, priority for industrial readers: what stops production lines: voltage dips, harmonics from inverters and drives, flicker; who is responsible for what. To discuss. -->
+
 # The Grid Today: Fewer Rotors, More Inverters
 
 ## 2000s: Inverters Arrive
@@ -259,6 +311,10 @@ Solar panels, batteries and most modern wind turbines are connected to the Grid 
 Nothing behind an inverter spins in sync with the Grid, so inverters bring no natural inertia. Modern heat pumps run their motors through electronics as well, so they are decoupled too.
 
 Inverters are controlled by software, and they are fast. They can react within milliseconds. The flow of electricity is controlled at the source, and the source is now software.
+
+## DC Comes Back: HVDC and DC Microgrids
+
+<!-- Claude placeholder: HVDC links and undersea cables; DC inside sites; fewer conversions, but harder to switch off (discussion.md, section 13). To discuss. -->
 
 ## 2006: One Line, Fifteen Million Households
 
@@ -312,6 +368,10 @@ Partly, regulation follows only once something becomes big enough to cause troub
 
 It is not, once the inverter sits behind an EMS together with batteries and industrial equipment. A certified inverter only guarantees its own behaviour within its own limits. It cannot stop the EMS above it from commanding sudden swings, or many sites from doing the same thing at once. The behaviour that matters for the Grid emerges from the whole system, and nobody certifies that today.
 
+## The Digital Grid: Smart Meters and Cyber Security
+
+<!-- Claude placeholder: smart meter gateway, remote access to inverters and EMS by their makers, NIS2. To discuss. -->
+
 ## 2025: The Iberian Blackout
 
 On 28 April 2025, Spain and Portugal went dark within seconds.
@@ -326,9 +386,27 @@ It comes from whatever still spins in sync: nuclear, gas, hydro and the remainin
 
 New sources are added on purpose: synchronous condensers, large spinning machines that burn no fuel and exist only to spin, and grid-forming inverters, usually on batteries, which imitate inertia ("synthetic inertia").
 
+Some new machines spin but are not synchronous. The Finnish company Teraloop builds hubless flywheels: a thin carbon-fibre ring, held by magnetic bearings, that stores energy as rotation. It spins at its own speed, not in step with the 50 Hz, so it reaches the Grid through power electronics. Its inertia is synthetic.
+
 Since 22 January 2026, the four German transmission system operators pay for inertia (Momentanreserve) from synchronous machines and grid-forming inverters. Inertia has become something you can sell.
 
 Many researchers argue that if inverters react fast enough, we will need much less physical inertia in future.
+
+## Physical vs Synthetic Inertia
+
+Inertia comes in two kinds.
+
+Physical inertia comes from a synchronous machine: a generator or motor whose rotor turns in step with the Grid's 50 Hz. The rotor is magnetically locked to the Grid. When the frequency dips, it gives up energy instantly. Its control software is the laws of physics: no bugs, no bad updates, no hesitation.
+
+Synthetic inertia comes through an inverter, usually on a battery or a flywheel. The inverter measures the frequency, and software decides to respond. A grid-forming inverter sets its own voltage and frequency, like a generator, and pushes back as soon as the frequency moves. Fast and strong, but only as good as its software.
+
+Even a flawless synthetic inertia still differs, with today's technology:
+
+- Overload: in a fault, a synchronous machine briefly delivers five to seven times its rated current. An inverter's semiconductors allow about 1.2 to 1.5 times.
+- Protection: protection relays were designed to detect those large fault currents. With inverters alone, they may not trip properly.
+- Energy behind it: a rotor's energy is there as long as it spins. A battery or flywheel can be empty, or its capacity sold to another market.
+
+The timing gap is mostly closing: grid-forming inverters react almost as fast as a rotor.
 
 ## Measuring a Nervous Grid
 
@@ -348,7 +426,33 @@ Both ways. More producers mean less dependence on any single plant, and fast, fl
 
 But low inertia, little visibility of millions of small systems, and badly behaved or herd-like energy management can make things riskier. It depends on rules and coordination, and on behaviour behind the meter.
 
+## Load Growth: Heat Pumps, EVs, Data Centres
+
+<!-- Claude placeholder: electrification makes the load grow and change shape. To discuss. -->
+
+# Cheat Sheets
+
+## Time Scales: From Milliseconds to Years
+
+<!-- Claude placeholder: one ladder for the whole article: inverter control (milliseconds), inertia (seconds), reserves (seconds to minutes), markets (15 minutes to a day ahead), grid build-out (years). To discuss. -->
+
+## Orders of Magnitude: From Watts to Gigawatts
+
+<!-- Claude placeholder: a phone charger, a household, a factory, a power plant, a country. To discuss. -->
+
 # Cost of Electricity vs Cost of Transport
+
+## How Electricity is Priced: Day-Ahead, Intraday, Merit Order
+
+<!-- Claude placeholder, priority for industrial readers: exchanges, merit order, negative prices, and what they mean for a purchasing strategy. To discuss. -->
+
+## Balancing Groups and Imbalance Prices
+
+<!-- Claude placeholder: every kWh belongs to a balancing group; what a forecast error costs. To discuss. -->
+
+## How Grid Fees Work
+
+<!-- Claude placeholder, priority for industrial readers: capacity and energy charges, peak-based fees, special fees for industry; the frame for the country sections below. To discuss. -->
 
 ## Netherlands
 
@@ -385,6 +489,10 @@ The Dutch government and grid operators (Liander, Enexis, Stedin, TenneT) are im
 ## Study Your Energy Profile
 
 ## Create a Strategy
+
+## Use Your Flexibility: Peak Shaving, Reserves, Demand Response
+
+<!-- Claude placeholder, priority for industrial readers: what a site with batteries, heat storage or flexible processes can do, and earn. To discuss. -->
 
 ## Restructure, Purchase and Manage
 
